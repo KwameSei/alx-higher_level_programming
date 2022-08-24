@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 
-for a in range(0, 10):
-    for b in range(a + 1, 10):
+for a in range(0, 100):
         end = ", "
-        if a == 8 and b == 9:
+        if a == 99:
             end = "\n"
-        print("{}{}".format(a, b), end=end)
+
+        if a < 10:
+            print(f"0{a}", end=end)
+        else:
+            print(f"{a}", end=end)
