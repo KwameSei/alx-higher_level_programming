@@ -8,4 +8,4 @@ for a in range(0, 100):
         if a < 10:
             print(f"0{a}", end=end)
         else:
-            print(f"{a}", end=end)
+            print("{}".format(a), end=end)
