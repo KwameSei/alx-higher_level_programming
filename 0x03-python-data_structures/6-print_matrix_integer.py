@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 
 def print_matrix_integer(matrix=[[]]):
-    if matrix is None:
-        return
-    for a in range(len(matrix)):
-        for b in range(len(matrix[a])):
-            end = " "
-            if (b + 1) == len(matrix[a]):
-                end = " "
-            print("{:d}".format(matrix[a][b]), end=end)
+    for a in matrix:
+        for b in a:
+            if a.index(b) < len(a) - 1:
+                print("{:d}".format(b), end=" ")
+            else:
+                print("{:d}".format(b), end="")
         print()
