@@ -7,8 +7,9 @@ class Square:
     """Representation of square"""
     
     """Initialize a new square"""
-    def __init__(self, size=0):
-        self.__size = size
+    def __init__(self, size=0, position=(0, 0)):
+        self.size = size
+        self.position = position
 
         """Defining area of a square"""
     def area(self):
