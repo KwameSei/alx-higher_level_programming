@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-
+"""
+This is a Rectangle class
+"""
 class Rectangle:
-    def __init__(self):
-        pass
+    """
+    Create an empty Rectangle Object
+    """
+    pass
