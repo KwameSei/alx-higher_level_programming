@@ -1,8 +1,6 @@
 <h1>Python - Test-driven development</h1>
-<br>
 <h2>Learning Objectives</h2>
 <p>At the end of this project, you are expected to be able to explain to anyone, <strong>without the help of Google:</strong></p>
-<br>
 <h2>General</h2>
 <ul>
 <li>Why Python programming is awesome</li>
