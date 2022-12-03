@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-import MySQLdb
-from sys import argv
-
 '''
 script that lists all states names beginning with the uppercase N
 from database hbtn_0e_0_usa
 '''
+
+import MySQLdb
+from sys import argv
 
 if __name__ == "__main__":
     start_db = MySQLdb.connect(
@@ -14,7 +14,6 @@ if __name__ == "__main__":
             user=argv[1],
             passwd=argv[2],
             db=argv[3],
-            charset="utf8"
             )
 
     cur = start_db.cursor()

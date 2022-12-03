@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import MySQLdb
-from sys import argv
-
 '''
 script that lists all states from the database hbtn_0e_0_usa
 '''
+
+import MySQLdb
+from sys import argv
 
 if __name__ == "__main__":
     start_db = MySQLdb.connect(
@@ -13,7 +13,6 @@ if __name__ == "__main__":
             user=argv[1],
             passwd=argv[2],
             db=argv[3],
-            charset="utf8"
             )
 
     cur = start_db.cursor()
@@ -22,5 +21,8 @@ if __name__ == "__main__":
     rows_query = cur.fetchall()
     for row in rows_query:
         print(row)
+
+    # Closing the cursing
     cur.close()
+    # Closing the database
     start_db.close()
