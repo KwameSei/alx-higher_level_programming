@@ -21,7 +21,8 @@ if __name__ == "__main__":
 
     rows_query = cur.fetchall()
     for row in rows_query:
-        print(row)
+        if row[1] == argv[4]:
+            print(row)
 
     # Closing the cursor
     cur.close()
