@@ -5,10 +5,9 @@
 """
 import requests as req
 from sys import argv
-from request.auth import HTTPBasicAuth
+from requests.auth import HTTPBasicAuth
 
 if __name__ == '__main__':
     auth = HTTPBasicAuth(argv[1], argv[2])
-    url = "https://api.github.com/user"
-    result = req.get(url, auth=auth)
+    result = req.get("https://api.github.com/user", auth=auth)
     print(result.json().get("id"))
